@@ -1,0 +1,11 @@
+:root {
+    --ion-color-primary: #890505;
+    --ion-color-button_color: #ffffff;
+    --ion-color-text_color: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        --ion-color-primary: #dcb1b1;
+    }
+}

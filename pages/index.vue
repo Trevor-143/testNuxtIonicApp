@@ -13,11 +13,11 @@
                 </ion-toolbar>
             </ion-header>
             <div class="content">
-                <p>Welcome to nuxt ionic</p>
-                <ion-button router-link="/resources" >Get resources</ion-button>
+                <h1 style="color: green;" >Nuxt Ionic</h1>
+                <p>Welcome to Nuxt Mobile</p>
+                <ion-button router-link="/tabs/tab1" >Get in</ion-button>
             </div>
         </ion-content>
-
     </ion-page>
 </template>
 
