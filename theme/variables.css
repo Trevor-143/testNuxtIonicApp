@@ -8,6 +8,7 @@
 }
 :root {
     --ion-color-primary: #890505;
+    --primary: #890505;
     --ion-color-button_color: #ffffff;
     --ion-color-text_color: #000000;
 }
