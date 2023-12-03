@@ -13,12 +13,17 @@
                 </ion-toolbar>
             </ion-header> -->
             <div class="content">
-                <h1>Caalee</h1>
-                <p>Icon & logo wallpapers</p>
-                <ion-img src="/images/lightWelcomeGif.gif" alt="caalee welcome image" ></ion-img>
-                <button class="custom-button" >
-                    <ion-nav-link router-link="/tabs/tab1" >Get Started</ion-nav-link>
-                </button>
+                <img class="backWelcomeImg" src="/images/lightWelcome.png" alt="welcome image" />
+                <div class="tContent">
+                    <div>
+                        <h1>Caalee</h1>
+                        <p>Icon & logo wallpapers</p>
+                    </div>
+                    <!-- <ion-img src="/images/lightWelcomeGif.gif" alt="caalee welcome image" ></ion-img> -->
+                    <button class="custom-button" >
+                        <ion-nav-link router-link="/tabs/tab1" >Get Started</ion-nav-link>
+                    </button>
+                </div>
             </div>
         </ion-content>
     </ion-page>
@@ -35,6 +40,27 @@
     justify-content: center;
     flex-direction: column;
     height: 100%;
+    position: relative;
+}
+.backWelcomeImg {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+}
+.tContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.tContent div {
+    text-align: center;
 }
 .content h1 {
     font-size: 4rem;
@@ -48,7 +74,7 @@
     padding: 1.5rem 1rem;
     width: 70%;
     font-size: 1.5rem;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     background-color: var(--primary);
     color: #ffffff;
     border-radius: 99px;
